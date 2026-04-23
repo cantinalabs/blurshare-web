@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — BlurShare</title>
+  <meta name="description" content="BlurShare's privacy policy: what we collect, what we don't, and why." />
+  <link rel="icon" href="assets/app-icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="index.html">
+        <img src="assets/app-icon.png" alt="BlurShare icon" />
+        <span>BlurShare</span>
+      </a>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html#features">Features</a>
+        <a class="nav-link" href="terms.html">Terms</a>
+        <a class="btn btn-ghost" href="https://cantinalabs.dev/#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <article class="legal">
+      <a class="back" href="index.html">← Back to BlurShare</a>
+      <h1>Privacy Policy</h1>
+      <div class="meta">Effective April 23, 2026 · Last updated April 23, 2026</div>
+
+      <p>Cantina Labs ("we", "us", or "our") builds <strong>BlurShare</strong> with privacy as the product. This Privacy Policy explains what information BlurShare does — and does not — collect, how it is used, and the choices you have.</p>
+
+      <h2>TL;DR</h2>
+      <ul>
+        <li><strong>BlurShare runs entirely on your Mac.</strong></li>
+        <li>We do <strong>not</strong> collect, transmit, sell, or share your screen contents, window titles, app list, keystrokes, or personal data.</li>
+        <li>BlurShare does <strong>not</strong> contain third-party analytics, advertising SDKs, or trackers.</li>
+        <li>Your configuration (profiles, allowlists, blocklists, hotkeys) is stored <strong>locally</strong> on your device.</li>
+      </ul>
+
+      <h2>1. Information BlurShare Processes Locally</h2>
+      <p>To do its job, BlurShare needs to understand what is on your screen so it can blur the right things. All of the following processing happens <strong>on your device only</strong> and is never sent to us or any third party:</p>
+      <ul>
+        <li><strong>Window metadata</strong> — application name, bundle ID, window title, and on-screen position of open windows, used to decide what to blur.</li>
+        <li><strong>Active application and focus changes</strong> — used to trigger auto-enable behavior (e.g. when Zoom, Slack, Teams, Discord, or OBS launches).</li>
+        <li><strong>Camera / microphone permission state of other apps</strong> — read from system-level signals to optionally auto-enable blur when a browser or app begins using your camera or mic. BlurShare itself does not access your camera or microphone.</li>
+        <li><strong>Screenshot / screen recording events</strong> — system notifications that a screenshot or recording was initiated, used to trigger auto-enable.</li>
+        <li><strong>Hotkey input</strong> — global keyboard shortcuts you configure for toggling the blur shield or panic mode.</li>
+      </ul>
+
+      <h2>2. Information BlurShare Stores Locally</h2>
+      <p>BlurShare persists the following on your Mac, in standard application support and preferences locations:</p>
+      <ul>
+        <li>Your profiles, allowlists, blocklists, and per-app rules.</li>
+        <li>Your notification blur region size and position.</li>
+        <li>Your hotkey bindings.</li>
+        <li>UI preferences (e.g. menu bar options, launch-at-login setting).</li>
+      </ul>
+      <p>You can delete all of this at any time by uninstalling BlurShare and removing its data from <code>~/Library/Application Support/BlurShare</code> and <code>~/Library/Preferences</code>.</p>
+
+      <h2>3. Information We Do Not Collect</h2>
+      <p>BlurShare does <strong>not</strong> collect, transmit, or store on any server:</p>
+      <ul>
+        <li>Screen contents, screenshots, or screen recordings.</li>
+        <li>Window titles, URLs, message contents, or document contents.</li>
+        <li>Keystrokes or clipboard data.</li>
+        <li>A list of installed apps.</li>
+        <li>Account information, email addresses, or contact information.</li>
+        <li>Location data.</li>
+        <li>Advertising identifiers.</li>
+      </ul>
+
+      <h2>4. Permissions BlurShare Requests</h2>
+      <p>macOS requires explicit user consent for the following permissions, which BlurShare uses only for the purposes stated:</p>
+      <table>
+        <thead>
+          <tr><th>Permission</th><th>Why it's needed</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Screen Recording</strong></td><td>To read window positions and content bounds so blur overlays land correctly. BlurShare does not save or transmit any screen data.</td></tr>
+          <tr><td><strong>Accessibility</strong></td><td>To detect active apps, respond to global hotkeys, and position blur overlays.</td></tr>
+          <tr><td><strong>Notifications</strong> (optional)</td><td>To show status messages such as "Blur Shield Enabled".</td></tr>
+          <tr><td><strong>Launch at Login</strong> (optional)</td><td>To start BlurShare automatically when you log in.</td></tr>
+        </tbody>
+      </table>
+      <p>You can grant or revoke any of these permissions in <strong>System Settings → Privacy &amp; Security</strong>.</p>
+
+      <h2>5. Network Activity</h2>
+      <p>BlurShare's core functionality works fully offline. The App may make limited outbound network requests only to:</p>
+      <ul>
+        <li>Check for updates from the Mac App Store (handled by macOS, not by us).</li>
+        <li>Load linked web pages (such as our support or website links) <strong>only when you click them</strong>.</li>
+      </ul>
+      <p>BlurShare does not send telemetry, crash reports, or analytics to our servers. If we add optional diagnostics in the future, they will be strictly opt-in and disclosed here.</p>
+
+      <h2>6. Third-Party Services</h2>
+      <p>BlurShare does not include third-party analytics, advertising, or tracking SDKs. When you click a link to an external website (e.g. our site or contact page), that site's privacy policy applies to your visit.</p>
+
+      <h2>7. Children</h2>
+      <p>BlurShare is a general productivity and privacy utility. It is not directed at children under 13, and we do not knowingly collect information from children.</p>
+
+      <h2>8. Data Retention and Deletion</h2>
+      <p>Because BlurShare does not collect your personal data on any server, there is nothing for us to retain or delete on our side. To remove all local data, uninstall BlurShare and delete its folders in <code>~/Library/Application Support</code> and <code>~/Library/Preferences</code>.</p>
+
+      <h2>9. Your Rights</h2>
+      <p>Depending on where you live (for example, under GDPR or CCPA), you may have rights regarding personal data held about you. Because BlurShare does not collect or store your personal data on our servers, most of these rights have nothing for us to act on. If you believe we hold personal data about you, you may contact us using the information below and we will respond promptly.</p>
+
+      <h2>10. Security</h2>
+      <p>BlurShare runs in the macOS App Sandbox with the minimum entitlements needed to function. Local configuration files are stored in your user account's protected directories. No software is perfectly secure, but we follow reasonable engineering practices to minimize risk.</p>
+
+      <h2>11. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Material changes will be reflected by updating the "Last Updated" date above and, where appropriate, called out in the App's release notes or on our website. Continued use of BlurShare after an update constitutes acceptance of the revised policy.</p>
+
+      <h2>12. Contact</h2>
+      <p>Questions, concerns, or privacy requests may be sent to:</p>
+      <p><strong>Cantina Labs</strong><br />
+      Website: <a href="https://cantinalabs.dev">cantinalabs.dev</a><br />
+      Contact: <a href="https://cantinalabs.dev/#contact">cantinalabs.dev/#contact</a></p>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container foot-grid">
+      <div class="nav-brand">
+        <img src="assets/app-icon.png" alt="BlurShare icon" />
+        <span>BlurShare</span>
+      </div>
+      <div class="foot-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="https://cantinalabs.dev/#contact">Contact</a>
+        <a href="https://cantinalabs.dev">Cantina Labs</a>
+      </div>
+      <div>© <span data-year>2026</span> Cantina Labs</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

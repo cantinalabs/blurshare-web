@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BlurShare — Share your screen, not your secrets.</title>
+  <meta name="description" content="BlurShare is a macOS privacy shield for screen sharing and recording. Blur sensitive apps, mask notifications, and prevent accidental leaks — all from the menu bar." />
+  <meta name="theme-color" content="#0b0b0d" />
+  <link rel="icon" href="assets/app-icon.png" />
+  <link rel="apple-touch-icon" href="assets/app-icon.png" />
+  <meta property="og:title" content="BlurShare — Share your screen, not your secrets." />
+  <meta property="og:description" content="A macOS privacy shield for screen sharing and recording. Built for professionals, creators, and anyone who shares their screen." />
+  <meta property="og:image" content="assets/app-icon.png" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="nav-brand" href="/">
+        <img src="assets/app-icon.png" alt="BlurShare icon" />
+        <span>BlurShare</span>
+      </a>
+      <div class="nav-links">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#how">How it works</a>
+        <a class="nav-link" href="privacy.html">Privacy</a>
+        <a class="btn btn-ghost" href="https://cantinalabs.dev/#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <span class="eyebrow"><span class="dot"></span> Coming soon · macOS</span>
+        <h1>
+          Share your screen.<br />
+          Not your <span class="blur-word">secrets.</span>
+        </h1>
+        <p class="lede">
+          BlurShare is a privacy shield for your Mac. Blur private apps, mask
+          notifications, and prevent accidental leaks during meetings,
+          streams, and screen recordings — all from the menu bar.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary btn-lg" href="https://testflight.apple.com/join/V9GjfPta">
+            Join the Beta
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#features">See how it works</a>
+        </div>
+        <div class="hero-meta">
+          <span><span class="tick">✓</span> 100% on-device</span>
+          <span><span class="tick">✓</span> No telemetry</span>
+          <span><span class="tick">✓</span> Sandboxed</span>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE DEMO -->
+      <div class="demo reveal reveal-d2" aria-label="Interactive preview">
+        <div class="demo-lights"><span></span><span></span><span></span></div>
+        <div class="demo-label">desktop.preview</div>
+
+        <div class="win allowed">
+          <div class="win-title">Zoom · Meeting</div>
+          <div class="win-body">
+            <div class="line med"></div>
+            <div class="line"></div>
+            <div class="line short"></div>
+          </div>
+          <span class="tag-pill">Allowed</span>
+        </div>
+
+        <div class="win private">
+          <div class="win-title">Messages · Private</div>
+          <div class="win-body">
+            <div class="line"></div>
+            <div class="line med"></div>
+            <div class="line short"></div>
+            <div class="line tiny"></div>
+          </div>
+          <span class="tag-pill">Blocked</span>
+        </div>
+
+        <div class="notif">
+          <strong>New Message — Mom</strong>
+          don't forget your dentist appt…
+        </div>
+
+        <button class="demo-toggle" type="button" aria-label="Toggle blur">
+          <span class="sw"></span>
+          Blur Shield
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROBLEM / WHY -->
+  <section id="why">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-tag">Why BlurShare</div>
+        <h2>Your screen holds more than the window you meant to share.</h2>
+        <p>Private DMs, client emails, half-written tabs, personal
+          notifications — one wrong share can cost a client, a role, or your
+          privacy. BlurShare removes the risk.</p>
+      </div>
+
+      <div class="problem-row">
+        <div class="p-card reveal reveal-d1">
+          <div class="num">01 / PRIVACY</div>
+          <h3>Keep private things private</h3>
+          <p>Conversations, journals, and personal tabs stay invisible to your audience, not just minimized.</p>
+        </div>
+        <div class="p-card reveal reveal-d2">
+          <div class="num">02 / LEAKS</div>
+          <h3>Prevent data leaks</h3>
+          <p>Block mail clients, specific browsers, or any app that should never flash across a client call.</p>
+        </div>
+        <div class="p-card reveal reveal-d3">
+          <div class="num">03 / DOXX</div>
+          <h3>Stop self-doxxing</h3>
+          <p>Control exactly what identifying details observers can see on your personal computer.</p>
+        </div>
+        <div class="p-card reveal reveal-d4">
+          <div class="num">04 / FOCUS</div>
+          <h3>Look professional</h3>
+          <p>No more scrambling to close tabs mid-share. Present with the confidence of a curated screen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" style="padding-top:40px">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-tag">Features</div>
+        <h2>A surgical privacy toolkit for your screen.</h2>
+        <p>Precision controls that stay out of your way until the moment you need them.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feat wide reveal reveal-d1">
+          <div class="feat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 10h8M8 14h5"/></svg>
+          </div>
+          <h3>Allowlist &amp; Blocklist</h3>
+          <p>Define exactly which apps stay visible and which get blurred. Works per-app or per-window title.</p>
+        </div>
+        <div class="feat wide reveal reveal-d2">
+          <div class="feat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          </div>
+          <h3>Multiple Profiles</h3>
+          <p>Switch between Work, Streaming, Client Calls, and Personal configurations in a single click.</p>
+        </div>
+
+        <div class="feat reveal reveal-d1">
+          <div class="feat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M4.93 10.93l4.24 4.24M2 18h6M19.07 10.93l-4.24 4.24M22 18h-6M12 22v-6"/></svg>
+          </div>
+          <h3>Panic Mode</h3>
+          <p>One hotkey to blur every window on every screen. Your emergency brake.</p>
+        </div>
+        <div class="feat reveal reveal-d2">
+          <div class="feat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h2M11 10h2M15 10h2M7 14h10"/></svg>
+          </div>
+          <h3>Custom Hotkeys</h3>
+          <p>Bind <span class="kbd">⌘</span><span class="kbd">⇧</span><span class="kbd">B</span> to toggle the shield. Your keyboard, your rules.</p>
+        </div>
+        <div class="feat reveal reveal-d3">
+          <div class="feat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.5 6 6.5.5-5 4.5 1.5 6.5L12 16l-5.5 3.5 1.5-6.5L3 8.5 9.5 8z"/></svg>
+          </div>
+          <h3>Click-Through Blur</h3>
+          <p>Drag and rearrange windows underneath the blur without ever disabling it.</p>
+        </div>
+
+        <div class="feat wide reveal reveal-d1">
+          <div class="feat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+          </div>
+          <h3>Auto-Enable on Share</h3>
+          <p>BlurShare flips on the moment Zoom, Slack, Teams, Discord, or OBS start sharing your screen — so you never have to remember.</p>
+        </div>
+        <div class="feat wide reveal reveal-d2">
+          <div class="feat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18"/></svg>
+          </div>
+          <h3>Notification Blur Zone</h3>
+          <p>Place a resizable blurred region wherever your notifications appear. Full coverage, user resizable.</p>
+        </div>
+
+        <div class="feat full reveal reveal-d1">
+          <div class="feat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M2 12c2.5-4 6-7 10-7s7.5 3 10 7c-2.5 4-6 7-10 7s-7.5-3-10-7z"/></svg>
+          </div>
+          <h3>Triggers that just work</h3>
+          <p>Auto-enable when your browser requests camera or microphone access. Auto-enable on native macOS screenshots and screen recordings. BlurShare anticipates the moment you need it — so you don't have to.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-tag">How it works</div>
+        <h2>Three steps. Then forget it exists.</h2>
+        <p>BlurShare is built to fade into your workflow. Set it once, trust it forever.</p>
+      </div>
+      <div class="how">
+        <div class="step reveal reveal-d1">
+          <h3>Pick a profile</h3>
+          <p>Start with a preset for Work, Streaming, or Client Calls. Or build your own from scratch.</p>
+        </div>
+        <div class="step reveal reveal-d2">
+          <h3>Set your rules</h3>
+          <p>Drag apps into your allowlist or blocklist. Resize your notification blur zone. Bind your hotkeys.</p>
+        </div>
+        <div class="step reveal reveal-d3">
+          <h3>Share with confidence</h3>
+          <p>BlurShare wakes up the moment you start sharing and stays out of your way the rest of the time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" style="padding-top:20px">
+    <div class="container">
+      <div class="cta-block reveal">
+        <h2>Be first in line.</h2>
+        <p>BlurShare is launching soon on the Mac App Store. Tell us you want it.</p>
+        <div class="cta-ctas">
+          <a class="btn btn-primary btn-lg" href="https://testflight.apple.com/join/V9GjfPta">
+            Join the Beta
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="https://cantinalabs.dev/#contact">Get in touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container foot-grid">
+      <div class="nav-brand">
+        <img src="assets/app-icon.png" alt="BlurShare icon" />
+        <span>BlurShare</span>
+      </div>
+      <div class="foot-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="https://cantinalabs.dev/#contact">Contact</a>
+        <a href="https://cantinalabs.dev">Cantina Labs</a>
+      </div>
+      <div>© <span data-year>2026</span> Cantina Labs</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
